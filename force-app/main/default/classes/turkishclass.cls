@@ -42,3 +42,25 @@
     
     }
 
+    /*
+Map<string, integer> mapName = new Map<string, integer>();
+mapName.put('john',5);
+mapName.put('Musa',6);
+mapName.put('Mehdi',10);
+mapName.put('Murad',10);
+mapName.put('kate',9);
+mapName.put('Dany',8);
+system.debug(mapName+ 'student name and rank');
+
+list<integer> studentrank=mapName.values();
+system.debug('rank list'+studentrank);
+
+set <string> names= mapName.keyset();
+for (string eachStu:names){
+   // system.debug(eachStu);
+    integer studentrank= mapName.get(eachStu);
+system.debug('student name is  '+eachStu + ' and students rank is '+studentrank);
+}
+*/
+
+

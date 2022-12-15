@@ -42,6 +42,7 @@ Account acc= new account();
 
     public static void Dmlupdatedemo_4(){
         account acc=[SELECT  name FROM  account where name ='SoftInnovas INC' limit 1];
+        
         contact cnt= new contact();
         cnt.LastName='Biden';
         cnt.AccountId =acc.id;
