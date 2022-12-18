@@ -1,4 +1,15 @@
-trigger SalesforceProject on Salesforce_Project__c (before insert,before update, after insert, after update ) {
+trigger SalesforceProject on Salesforce_Project__c (before insert, after insert ) {
+   if(trigger.isAfter && trigger.isInsert){
+        //call trigger handler to creat slaesforce ticket
+SPTriggerHandler.creatDefaultTickets(trigger.New);
+   }
+
+ 
+
+ 
+
+
+   /*
  if (trigger.isBefore && trigger.isInsert){
     for (Salesforce_Project__c spc : trigger.new){
  spc.Project_Name__c = 'New Trigger Project ';
@@ -19,5 +30,6 @@ Salesforce_Project__c oldsp = projectOldMap.get(eachid);
 system.debug('project old name '+ oldsp.Project_Name__c);
 }
 
- }
+ } */
+
 }
