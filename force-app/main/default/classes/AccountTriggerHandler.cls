@@ -57,4 +57,14 @@ if(!allContacts.isEmpty()){
     update allContacts;
 }
 }
+ @future
+ public static void NumberOfContact (set <id> accId){
+    list <account > AccList =[select id,Number_Of_Contacts__c,(Select id from contacts)from account where id in: accId];
+  list <account> uplist= new List <account>();
+  for(account a: Acclist){
+    a.Number_Of_Contacts__c = a.contacts.size();
+    uplist.add(a);
+  }
+  update uplist;
+}
 }
