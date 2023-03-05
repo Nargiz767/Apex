@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Opportunity Form" icon-name="standard:opportunity">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" label="Opportunity Name" onchange={changeHandler} value={oppName}></lightning-input>
+            <lightning-combobox
+            label="Opportunity Stage"
+            value={oppStage}
+            placeholder="Select Opportunity Stage"
+            options={stageOptions}
+            onchange={changeHandler} ></lightning-combobox>
+            <lightning-combobox
+            label="Opportunity Type"
+            value={oppType}
+            placeholder="Select Opportunity Type"
+            options={typeOptions}
+            onchange={changeHandler}></lightning-combobox>
+            <div class="slds-var-m-around_medium">
+                Thanks forc chosing the correct information. You have entered <br>
+                Opportunity name:{oppName} <br>
+                Opportunity stage: {oppStage} <br>
+                Opportunity type: {oppType}
+
+            </div>
+        </div>
+    </lightning-card>
+</template>

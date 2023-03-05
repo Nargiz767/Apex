@@ -1,0 +1,3 @@
+ RestCallOurTurkish.getUser();
+  RestCallOurTurkish.getAnimals();
+;

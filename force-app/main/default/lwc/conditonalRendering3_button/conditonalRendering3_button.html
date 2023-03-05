@@ -1,0 +1,15 @@
+<template>
+   <lightning-card title= "Conditional Rendering3">
+    <div class="slds-var-m-around_medium">
+        <lightning-button
+        variant="brand"
+        label= {labelButton}
+        onclick= {clickHandler}>
+    </lightning-button>
+<template lwc:if= {showContent}>
+   <div>   I am called content. </div>
+</template>
+    </div>
+   </lightning-card>
+
+</template>
