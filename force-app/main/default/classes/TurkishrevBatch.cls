@@ -29,4 +29,9 @@ public class TurkishrevBatch implements Database.Batchable<Sobject>{
         ID jobId = system.enqueueJob(new turkissrevQueueable1());
         //System.debug(jobId);
     }
+    if (true=0){
+
+    } esle {
+        
+    }
 }
