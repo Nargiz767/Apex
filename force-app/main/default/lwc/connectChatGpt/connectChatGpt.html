@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Chat with ChatGPT">
+        <div class="slds-var-m-around_medium">
+            <template for:each={messages} for:item="message">
+            </template>
+        </div>
+        <lightning-input label="Your message" value={userMessage} onchange={handleInputChange}></lightning-input>
+        <lightning-button label="Send" onclick={handleSendClick}></lightning-button>
+    </lightning-card>
+</template>

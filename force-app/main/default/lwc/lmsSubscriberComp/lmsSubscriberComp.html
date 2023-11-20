@@ -1,0 +1,10 @@
+<template>
+  <lightning-card title="LMS Subscriber" >
+    <div class="slsd-var-m-around_medium">
+        <strong>Message Received</strong><br/>
+        <template lwc:if= {messageReceived}>
+           {messageReceived.lmsData.value}
+        </template>
+    </div>
+  </lightning-card> 
+</template>

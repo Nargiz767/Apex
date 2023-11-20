@@ -2,7 +2,7 @@ public class FlagsCountryTURKISH {
     public static HttpResponse getCountry() {
         //1 request enpoint and method
         HttpRequest Request = new HttpRequest();
-        Request.setEndpoint('https://restcountries.com/v2/all');
+        Request.setEndpoint('Callout:CountryAPI');
         Request.setMethod('GET');
 
         //2 http

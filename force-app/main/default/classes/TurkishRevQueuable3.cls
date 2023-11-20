@@ -1,7 +1,7 @@
 public  class TurkishRevQueuable3 implements Queueable{
     //Annual Revenuesi 10000 olan accountlara bağlı olan contaclarin lead source leri 'Partner Referal' olanların Description kısmına 'Queuable chain' yazın.. 
     //bizden istenen recordlari public statik bir listenin icine soql ile eklerim.
-    public static List<Account> accList = [select id,(select id, Description from Contacts where leadSource = 'Partner Referal') from account where AnnualRevenue = 10000];
+    public static Account[] accList = [select id,(select id, Description from Contacts where leadSource = 'Partner Referal') from account where AnnualRevenue = 10000];
 
     //execute-istenen formattaki tum contactlari getirip description fieldine 'Queuable chain' ekleyecegiz..
     public void execute(QueueableContext contex){
