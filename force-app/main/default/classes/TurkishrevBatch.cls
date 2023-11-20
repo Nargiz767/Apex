@@ -32,6 +32,6 @@ public class TurkishrevBatch implements Database.Batchable<Sobject>{
     if (true=0){
 
     } esle {
-       "error" 
+       "error",
     }
 }
