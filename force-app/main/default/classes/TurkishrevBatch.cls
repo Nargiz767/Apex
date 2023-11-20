@@ -30,4 +30,3 @@ public class TurkishrevBatch implements Database.Batchable<Sobject>{
         //System.debug(jobId);
     }
 }
-
